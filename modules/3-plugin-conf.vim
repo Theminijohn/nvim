@@ -1,6 +1,6 @@
 " nerdtree =========
-autocmd vimenter * NERDTree 
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif 
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeMinimalUI = 1
 map <C-k> :NERDTreeToggle<CR>
 
@@ -32,6 +32,7 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#buffer_min_count = 1
+let g:airline#extensions#tabline#fnamemod = ':p:.'
 
 " get font from ryanoasis/powerline-extra-symbols
 let g:airline_left_alt_sep = "\ue0c4"
