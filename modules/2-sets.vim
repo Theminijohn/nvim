@@ -1,6 +1,8 @@
 filetype plugin indent on
 syntax on
 
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
 if has('nvim')
   set termguicolors
   set ttimeout
