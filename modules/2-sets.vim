@@ -19,6 +19,7 @@ set cursorline
 set laststatus=2
 set so=7
 let html_no_rendering=1
+set shortmess=a
 
 " More natural splits
 set splitbelow
