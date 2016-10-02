@@ -5,6 +5,5 @@ if has("autocmd")
  
     " autoreload baby
     au BufWritePost *.vim source $MYVIMRC | AirlineRefresh
-    au BufWritePost .vimrc source $MYVIMRC | AirlineRefresh
   augroup END
 end
