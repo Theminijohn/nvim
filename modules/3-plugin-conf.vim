@@ -42,3 +42,11 @@ let g:airline_right_sep = "\ue0c7"
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+" Ultisnips =========
+let g:UltiSnipsSnippetsDir = '~/.config/nvim/neo_snippets'
+let g:UltiSnipsSnippetDirectories=["neo_snippets"]
+let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
