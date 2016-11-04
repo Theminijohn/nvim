@@ -4,9 +4,10 @@ call plug#begin('~/.nvim/bundle')
   Plug 'scrooloose/nerdtree'
   Plug 'iCyMind/NeoSolarized'
   Plug 'wakatime/vim-wakatime'
-  Plug 'SirVer/ultisnips'
+  " Plug 'SirVer/ultisnips'
   Plug 'dag/vim-fish', { 'for': 'fish' }
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'edkolev/tmuxline.vim'
   Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 call plug#end()

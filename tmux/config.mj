@@ -1,0 +1,54 @@
+# make tmux display things in 256 colors
+set -g default-terminal "screen-256color"
+
+if-shell "test -f ~/.config/nvim/tmux/solarized.mj" "source ~/.config/nvim/tmux/solarized.mj"
+
+# copy pasta
+set -g default-shell $SHELL
+set -g default-command "reattach-to-user-namespace -l $SHELL"
+
+# timeout tweak (ms)
+set -g escape-time 10
+
+# https://github.com/Homebrew/homebrew/issues/45413#issuecomment-152570288
+set -g assume-paste-time 0
+
+# Start windows and panes at 1, not 0
+set -g base-index 1
+setw -g pane-base-index 1
+
+# use vim keybindings in copy mode
+set -g mode-keys vi
+
+# set scrollback history to 1000 (1k)
+set -g history-limit 1000
+
+set -g mouse on
+set -g bell-action any
+set -g status-position top
+
+# Set prefix to Ctrl-Space
+set -g prefix C-Space
+bind Space send-prefix
+
+bind | split-window -h
+bind - split-window -v
+
+# map Vi movement keys as pane movement keys
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+bind-key J resize-pane -D 5
+bind-key K resize-pane -U 5
+bind-key H resize-pane -L 5
+bind-key L resize-pane -R 5
+
+# and use C-h and C-l to cycle thru panes
+bind -r C-h select-window -t :-
+bind -r C-l select-window -t :+
+
+# Back and forth
+bind -r [ previous-window
+bind -r ] next-window

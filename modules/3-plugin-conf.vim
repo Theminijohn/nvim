@@ -41,12 +41,29 @@ let g:airline_left_sep = "\ue0c6"
 let g:airline_right_sep = "\ue0c7"
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+let g:airline_symbols.linenr = '√'
 
 " Ultisnips =========
-let g:UltiSnipsSnippetsDir = '~/.config/nvim/neo_snippets'
-let g:UltiSnipsSnippetDirectories=["neo_snippets"]
-let g:UltiSnipsEditSplit = 'vertical'
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+"let g:UltiSnipsSnippetsDir = '~/.config/nvim/neo_snippets'
+"let g:UltiSnipsSnippetDirectories=["neo_snippets"]
+"let g:UltiSnipsEditSplit = 'vertical'
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<tab>"
+"let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" Tmuxline
+let g:tmuxline_powerline_separators = 0
+let g:tmuxline_separators = {
+      \ 'left' : "\ue0b0",
+      \ 'left_alt': "\ue0b1",
+      \ 'right' : "\ue0c7",
+      \ 'right_alt' : "\ue0b3",
+      \ 'space' : ' '}
+
+let g:tmuxline_preset = {
+      \'a'    : '★',
+      \'win'  : '[#I] #W',
+      \'cwin' : '[●] #W',
+      \'y'    : '❉ %R',
+			\'z'    : "[#(cd #{pane_current_path}; git rev-parse --abbrev-ref HEAD)]",
+      \'options' : {'status-justify' : 'left'}}

@@ -10,7 +10,7 @@ if has("autocmd")
     " delete any previously defined autocmd's
     au!
 
-    au BufWritePost *.vim source $MYVIMRC | AirlineRefresh "autoreload baby
+    au BufWritePost *.vim source $MYVIMRC | AirlineRefresh | Tmuxline airline | TmuxlineSnapshot! tmux/solarized.mj "autoreload baby
     au BufWritePre * :call <SID>StripTrailingWhitespaces()
   augroup END
 end

@@ -4,7 +4,6 @@ syntax on "default
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 if has('nvim')
-  set termguicolors
   set ttimeout
   set ttimeoutlen=0
   colorscheme NeoSolarized
