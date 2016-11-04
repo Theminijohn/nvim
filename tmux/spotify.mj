@@ -1,5 +1,9 @@
 #!/usr/bin/env osascript
 
+# Don't forget to
+# - symlink
+# - chmod +x spotify-song
+
 # Returns the current playing song in Spotify
 tell application "Spotify"
   if it is running then
