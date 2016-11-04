@@ -17,7 +17,7 @@ The numbers are there for load hierarchy.
 You may noticed the weird `.mj` in `/tmux`. I symlinked basic conf files
 to have everything in one folder.
 
-##### Config
+#### Config.mj
 
 This is the normal `.tmux.conf`, right at home. You'll need to symlink:
 
@@ -25,12 +25,12 @@ This is the normal `.tmux.conf`, right at home. You'll need to symlink:
   ln -s $HOME/.config/nvim/tmux/config.mj $HOME/.tmux.conf
 ```
 
-##### Solarized
+#### Solarized.mj
 
 I'm using `Tmuxline` for my Status bar. Define stuff in `modules/3-plugin-conf.vim`
 and on save it automatically re-generates that file.
 
-##### Spotify
+#### Spotify.mj
 
 Small script to show current spotify song, check [here](tmux/spotify.mj). You'll need to symlink:
 
