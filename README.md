@@ -1,4 +1,4 @@
-<img src="https://pbs.twimg.com/profile_images/581516445907087360/-MqWfsEN.png" align="right" />
+<img src="http://i.imgur.com/MGJ4Xg7t.png" align="right" />
 # Dotfiles
 > My precious Dotfiles. I'm evolving this continuously as I learn more about Vim, Tmux and Fish. You'll maybe see some bad practices, don't judge bro!
 
