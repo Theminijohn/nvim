@@ -43,7 +43,7 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = '√'
 
-" Ultisnips =========
+" ultisnips =========
 "let g:UltiSnipsSnippetsDir = '~/.config/nvim/neo_snippets'
 "let g:UltiSnipsSnippetDirectories=["neo_snippets"]
 "let g:UltiSnipsEditSplit = 'vertical'
@@ -51,7 +51,7 @@ let g:airline_symbols.linenr = '√'
 "let g:UltiSnipsJumpForwardTrigger="<tab>"
 "let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
-" Tmuxline
+" tmuxline
 let g:tmuxline_powerline_separators = 0
 let g:tmuxline_separators = {
       \ 'left' : "\ue0b0",

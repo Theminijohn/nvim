@@ -9,5 +9,6 @@ call plug#begin('~/.nvim/bundle')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'edkolev/tmuxline.vim'
+  Plug 'vimwiki/vimwiki'
   Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 call plug#end()

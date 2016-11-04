@@ -1,5 +1,3 @@
-set nocompatible "default
-
 " Wraps paths to make them relative to this directory.
 function! Dot(path)
   return '~/.config/nvim/' . a:path
