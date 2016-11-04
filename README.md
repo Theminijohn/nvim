@@ -21,7 +21,9 @@ to have everything in one folder.
 
 This is the normal `.tmux.conf`, right at home. You'll need to symlink:
 
-- `Tmux Conf`: ln -s $HOME/.config/nvim/tmux/config.mj $HOME/.tmux.conf
+```
+  ln -s $HOME/.config/nvim/tmux/config.mj $HOME/.tmux.conf
+```
 
 ##### Solarized
 
@@ -32,4 +34,6 @@ and on save it automatically re-generates that file.
 
 Small script to show current spotify song, check [here](tmux/spotify.mj). You'll need to symlink:
 
-- `Spotify`: ln -s $HOME/.config/nvim/tmux/spotify.mj $HOME/bin/spotify-song
+```
+ln -s $HOME/.config/nvim/tmux/spotify.mj $HOME/bin/spotify-song
+```
