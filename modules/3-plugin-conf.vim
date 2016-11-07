@@ -65,5 +65,5 @@ let g:tmuxline_preset = {
       \'win'  : '[#I] #W',
       \'cwin' : '[●] #W',
       \'y'    : '❉ %R',
-			\'z'    : "[#(cd #{pane_current_path}; git rev-parse --abbrev-ref HEAD)]",
+			\'z'    : ":#(cd #{pane_current_path}; git rev-parse --abbrev-ref HEAD): #(~/bin/spotify-song)",
       \'options' : {'status-justify' : 'left'}}

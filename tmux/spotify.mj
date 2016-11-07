@@ -13,7 +13,7 @@ tell application "Spotify"
 
       if artist_name > 0
         # If the track has an artist set it is most likely a song rather than an advert
-        "♫ " & artist_name & " - " & track_name
+        "♬ " & artist_name & " - " & track_name
       else
         # I'm on Premium but if the track doesn't have an artist set
         # it is most likely an advert rather than a song
