@@ -7,7 +7,8 @@
 
 ### Prerequisites
 
-- brew install [spar](https://github.com/holman/spark)
+- brew install [spark](https://github.com/holman/spark)
+- Get [Powerline Extra Symbols](https://github.com/ryanoasis/powerline-extra-symbols)
 
 
 ## NeoVim
