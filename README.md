@@ -5,6 +5,10 @@
 - [Neovim](#neovim)
 - [Tmux](#tmux)
 
+### Prerequisites
+
+- brew install [spar](https://github.com/holman/spark)
+
 
 ## NeoVim
 
