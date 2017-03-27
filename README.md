@@ -54,3 +54,13 @@ Small script to show current spotify song, check [here](tmux/spotify.mj). You'll
 ```
 ln -s $HOME/.config/nvim/tmux/spotify.mj $HOME/bin/spotify-song
 ```
+
+After Installation:
+
+Go into {whateverroute}/tmuxline.vim/autoload/ and edit tmuxline.vim, there should be a line that looks kinda like:
+
+```
+\ 'status-utf8' : 'on'}
+```
+
+remove that and close the bracket and you are done.
