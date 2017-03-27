@@ -3,9 +3,9 @@ set -g default-terminal "screen-256color"
 
 if-shell "test -f ~/.config/nvim/tmux/solarized.mj" "source ~/.config/nvim/tmux/solarized.mj"
 
-# copy pasta
+# hack required for Sierra
 set -g default-shell $SHELL
-# set -g default-command "reattach-to-user-namespace -l $SHELL"
+set -g default-command "reattach-to-user-namespace -l ${SHELL}"
 
 # timeout tweak (ms)
 set -g escape-time 10

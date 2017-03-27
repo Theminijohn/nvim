@@ -16,6 +16,7 @@ set lazyredraw
 set history=10
 set cursorline
 set laststatus=2 "default
+set cc=80
 set so=7
 let html_no_rendering=1
 set shortmess=a
