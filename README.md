@@ -7,9 +7,12 @@
 
 ### Prerequisites
 
-- brew install [spark](https://github.com/holman/spark)
 - Get [Powerline Extra Symbols](https://github.com/ryanoasis/powerline-extra-symbols)
 
+- `$ brew install python`
+- `$ brew install python3`
+- `$ pip2 install neovim`
+- `$ pip3 install neovim`
 
 ## NeoVim
 
@@ -29,6 +32,15 @@ This is the normal `.tmux.conf`, right at home. You'll need to symlink:
 ```
   ln -s $HOME/.config/nvim/tmux/config.mj $HOME/.tmux.conf
 ```
+
+If Neovim can't read UTF-8 Characters, run this:
+
+```
+locale | grep -E '(LANG|LC_CTYPE|LC_ALL)=(.*\.)?(UTF|utf)-?8'
+```
+
+If there's no results, then you might not be using a UTF-8 locale.
+See the following issues: [#1601](https://github.com/neovim/neovim/issues/1601) [#1858](https://github.com/neovim/neovim/issues/1858) [#2386](https://github.com/neovim/neovim/issues/2386)
 
 #### -- Solarized.mj
 
