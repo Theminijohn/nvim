@@ -9,6 +9,9 @@ if has('nvim')
   colorscheme NeoSolarized
 endif
 
+set synmaxcol=128
+syntax sync minlines=256
+
 set nowrap
 set number
 set ttyfast "default

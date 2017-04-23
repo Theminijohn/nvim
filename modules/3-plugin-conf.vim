@@ -34,6 +34,8 @@ let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#buffer_min_count = 1
 let g:airline#extensions#tabline#fnamemod = ':p:.'
 
+let g:calendar_google_calendar = 1
+
 " get font from ryanoasis/powerline-extra-symbols
 let g:airline_left_alt_sep = "\ue0c4"
 let g:airline_right_alt_sep = "\ue0c5"
