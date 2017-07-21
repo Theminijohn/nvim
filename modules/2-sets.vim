@@ -12,11 +12,14 @@ endif
 set synmaxcol=128
 syntax sync minlines=256
 
+set noswapfile
 set nowrap
 set number
 set ttyfast "default
 set lazyredraw
-set history=10
+set history=10 "https://github.com/neovim/neovim/wiki/Following-HEAD#20170403
+set mouse=a
+set guicursor= "https://github.com/neovim/neovim/wiki/Following-HEAD#20170402
 set cursorline
 set laststatus=2 "default
 set cc=80

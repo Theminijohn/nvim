@@ -6,6 +6,7 @@ map <C-k> :NERDTreeToggle<CR>
 
 " fzf =========
 map <leader><tab> :FZF<CR>
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 let g:fzf_layout = { 'down': '~30%' }
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '20%'})
 let g:fzf_nvim_statusline = 0
@@ -46,12 +47,12 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = '√'
 
 " ultisnips =========
-"let g:UltiSnipsSnippetsDir = '~/.config/nvim/neo_snippets'
-"let g:UltiSnipsSnippetDirectories=["neo_snippets"]
-"let g:UltiSnipsEditSplit = 'vertical'
-"let g:UltiSnipsExpandTrigger="<tab>"
-"let g:UltiSnipsJumpForwardTrigger="<tab>"
-"let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsSnippetsDir = '~/.config/nvim/neo_snippets'
+let g:UltiSnipsSnippetDirectories=["neo_snippets"]
+let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " tmuxline
 let g:tmuxline_powerline_separators = 0
