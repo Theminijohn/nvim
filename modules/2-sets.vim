@@ -7,7 +7,7 @@ if has('nvim')
   set ttimeout
   set ttimeoutlen=0
   " colorscheme NeoSolarized
-  colorscheme base16-default-dark
+  colorscheme base16-eighties
 endif
 
 set synmaxcol=128
