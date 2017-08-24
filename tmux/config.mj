@@ -10,6 +10,8 @@ set -g default-command "reattach-to-user-namespace -l ${SHELL}"
 # timeout tweak (ms)
 set -g escape-time 10
 
+set -g repeat-time 0
+
 # https://github.com/Homebrew/homebrew/issues/45413#issuecomment-152570288
 set -g assume-paste-time 0
 

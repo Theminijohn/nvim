@@ -47,3 +47,6 @@ nmap <leader>w :w!<CR>
 
 " prevent fzf from opening in Nerdtree buffer
 nnoremap <silent> <expr> <Leader><tab> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":FZF\<cr>"
+
+" use tab with deoplete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"

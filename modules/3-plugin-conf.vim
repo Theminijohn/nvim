@@ -4,8 +4,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:NERDTreeMinimalUI = 1
 map <C-k> :NERDTreeToggle<CR>
 
-" fzf =========
-map <leader><tab> :FZF<CR>
+" fzf ========= map <leader><tab> :FZF<CR>
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 let g:fzf_layout = { 'down': '~30%' }
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '20%'})
@@ -22,7 +21,7 @@ if !exists('g:airline_symbols')
 endif
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme = "solarized"
+let g:airline_theme = "base16_eighties"
 let g:airline_section_y = ''
 let g:airline_section_x = ''
 let g:airline_extensions = ['tabline']
@@ -70,3 +69,15 @@ let g:tmuxline_preset = {
       \'y'    : '❉ %R',
 			\'z'    : ":#(cd #{pane_current_path}; git rev-parse --abbrev-ref HEAD): #(~/bin/spotify-song)",
       \'options' : {'status-justify' : 'left'}}
+
+" deoplete ============================
+let g:deoplete#enable_at_startup = 1
+if !exists('g:deoplete#omni#input_patterns')
+  let g:deoplete#omni#input_patterns = {}
+endif
+
+" let g:deoplete#disable_auto_complete = 1
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" autocomplete-flow
+let g:autocomplete_flow#insert_paren_after_function = 0
