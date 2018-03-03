@@ -5,7 +5,7 @@ call plug#begin('~/.nvim/bundle')
   Plug 'scrooloose/nerdcommenter'
   Plug 'chriskempson/base16-vim'
   Plug 'iCyMind/NeoSolarized'
-  " Plug 'wakatime/vim-wakatime'
+  Plug 'wakatime/vim-wakatime'
   Plug 'dag/vim-fish', { 'for': 'fish' }
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
@@ -15,4 +15,6 @@ call plug#begin('~/.nvim/bundle')
   Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'wokalski/autocomplete-flow'
+  Plug 'pangloss/vim-javascript'
+  Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()

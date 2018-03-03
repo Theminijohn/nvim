@@ -10,7 +10,7 @@ if has('nvim')
   colorscheme base16-eighties
 endif
 
-set synmaxcol=128
+set synmaxcol=180
 syntax sync minlines=256
 
 set noswapfile
